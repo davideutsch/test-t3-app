@@ -1,0 +1,26 @@
+1. Setup Databases
+    a. locale databases at each developer pc
+    b. test database 
+    c. staging database
+    d. production database 
+2. Create PostgreSQL DB with supabase.com
+    -   Create Project
+    -   Copy Credentials
+    -   Set DATABASE_URL in .env file
+3. Setup Github as OAuth instead of Discord
+    -   Go to github.com > Profile > Settings > Developer Settings > OAuth Apps
+    -   Register new Application:
+
+        DEV:
+            name: test-t3-app-dev
+            Homepage-URL: http://localhost:3000
+            Authorization Callback URL: http://localhost:3000/api/auth/callback/github
+            Client ID: e760004f3720c99582d7
+            Client secret: 2e2c2ff50ad25196746ac5f5e4e93ee3e2ebe79e
+
+        PROD:
+            name: test-t3-app-prod
+            Homepage-URL: https://test-t3-app-prod.vercel.app/
+            Authorization Callback URL: https://test-t3-app-prod.vercel.app/api/auth/callback/github
+            Client ID: af90a4775628dc775475
+            Client secret: 8ee2d4c179b88c8043e16cb61b92730bd98112d7
