@@ -1,7 +1,7 @@
 import { z } from "zod";
 import {
   createTRPCRouter,
-  publicProcedure,
+  publicProcedure, // no authentication required
   protectedProcedure,
 } from "y/server/api/trpc";
 

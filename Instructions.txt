@@ -25,3 +25,4 @@
             Authorization Callback URL: https://test-t3-app-prod.vercel.app/api/auth/callback/github
             Client ID: af90a4775628dc775475
             Client secret: 8ee2d4c179b88c8043e16cb61b92730bd98112d7
+4. Deploy on VERCEL
